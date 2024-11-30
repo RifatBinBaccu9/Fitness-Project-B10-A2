@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background color section */
+.bg-colore-add {
+    background: #000;
+    width: 100%;
+}
+
+/* Header section */
+header {
+    width: 85%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* Nav title */
+.nav-title {
+    color: #DB503A;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Nav pages */
+.nav-pages {
+    border: 1px solid #2F2F2F;
+    border-radius: 50px;
+    width: 42%;
+}
+
+.nav-pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+    z-index: 100;
+}
+
+.nav-pages ul li {
+    list-style: none;
+}
+
+.nav-pages ul li a {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+.nav-home {
+    background: #E6533C;
+    border-radius: 50px;
+}
+
+/* Hide checkbox */
+#checkbox_toggle {
+    display: none;
+}
+
+/* Style hamburger and icons */
+.hamburger i {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hamburger .fa-bars {
+    display: none;
+}
+.hamburger .fa-times {
+    display: none;
+}
+
+/* Responsive navber */
+@media screen and (max-width: 576px) {
+
+    .nav-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    header {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav-pages {
+        width: 100%;
+        display: flex;
+        border: none;
+        justify-content: flex-end;
+    }
+
+    .nav-pages ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 30%;
+        padding: 0;
+    }
+
+    .nav-pages ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-pages ul li a {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #2F2F2F;
+    }
+
+    .nav-home {
+        border-radius: 0;
+    }
+    /* Display hamburger icon */
+    .hamburger .fa-bars {
+        display: block;
+    }
+
+    /* Show cancel icon menu  opened */
+    #checkbox_toggle:checked + .hamburger .fa-bars {
+        display: none;
+    }
+
+    #checkbox_toggle:checked + .hamburger .fa-times {
+        display: block;
+    }
+
+    /* Show menu checkbox checked */
+    #checkbox_toggle:checked + .hamburger + .menu {
+        display: flex;
+    }
+}
+/* header section end */
+
+
+
+/* banner section start*/
+.banner-section{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+/* banner left section */
+.banner-left{
+    color: #fff;
+}
+.banner-left h2{
+    font-size: 70px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    width: 65%;
+    padding-top: 120px;
+}
+.banner-left h2 span{
+    font-family: "Dancing Script", cursive;
+}
+.banner-left p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #8C8C8C;
+    width: 65%;
+    padding: 30px 0;
+}
+.bnner-btn-left{
+    color: #fff;
+    border: 1px solid #DB503A;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #DB503A;
+    margin-right: 15px;
+}
+.bnner-btn-right{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #000;
+}
+
+/* banner right section */
+.banner-right{
+position: relative;
+}
+.banner-right img{
+    margin-right: 50px;
+}
+.banner-card-left{
+    border-radius: 10px;
+    padding: 15px 30px;
+    display: flex;
+    position: absolute;
+    bottom: 126px;
+    left: -80px;
+    background: #2e2b2b;
+    opacity: 0.8;
+    gap: 10px;
+    align-items: center;
+
+}
+.video-play{
+    background: #E6533C;
+    color: #fff;
+    width:10px;
+    height: 17px;
+    padding: 7px 11px;
+    border-radius: 50%;
+}
+.video-tu{
+    color: #fff;
+}
+.video-tu h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+.video-tu p{
+    color: #A7A5A2;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-card-right{
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    background: #1a1818;
+    opacity: 0.8;
+    color: #fff;
+}
+.banner-card-right h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+.banner-card-right p{
+    color: #A7A5A2;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*Responsive banner section */
+@media screen and (max-width: 576px) {
+    .banner-section{
+        display: block;
+        width: 90%;
+        margin: auto;
+    } 
+
+    /* banner left section */
+    .banner-left h2{
+        font-size: 50px;
+        font-weight: 600;
+        width: 90%;
+        margin: auto;
+        padding-top: 120px;
+    }
+    .banner-left p{
+        font-size: 20px;
+        font-weight: 400;
+        width: 90%;
+        margin: auto;
+        padding: 30px 0;
+    }
+   .btn-section{
+    text-align: center;
+    margin-bottom: 40px;
+   } 
+.bnner-btn-left{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.bnner-btn-right{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* banner right section */
+.banner-right{
+    position: relative;
+    }
+    .banner-right img{
+        margin-left: 100px;
+    }
+    .banner-card-left{
+        position: absolute;
+        bottom: 250px;
+        left: 50px;
+    
+    }
+    .banner-card-right{
+        position: absolute;
+        top: 150px;
+        right: 0;
+    }
+}
+/* banner section end */
+
+
+/* Habits section start */
+.habits{
+    width: 85%;
+    margin: 90px auto;
+}
+.habit-section h1{
+    color: #fff;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+}
+.habit-section p{
+    color: #808080;
+    font-size: 20px;
+    font-weight:500;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* habits-card */
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0;
+}
+.habits-card{
+    text-align: center;
+}
+.habits-card img{
+  border-radius: 50%;
+}
+.habits-card h3{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.habits-card p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  width: 70%;
+  margin: auto;
+}
+
+/*Responsive habits section */
+@media screen and (max-width: 576px) {
+    .habits{
+        width: 90%;
+        margin: 90px auto;
+    }
+    .habit-section p{
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    /* habits-card */
+    .card-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px 0;
+    }
+    .habits-card{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+/* Habits section end */

@@ -1,8 +1,36 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
 }
-
+body p{
+    color: #737373;
+    font-size: 20px;
+    font-weight: 400;
+}
+body h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.bnner-btn-left{
+    color: #fff;
+    border: 1px solid #DB503A;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #DB503A;
+    margin-right: 15px;
+}
+.bnner-btn-right{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #000;
+}
 /* Background color section */
 .bg-colore-add {
     background: #000;
@@ -176,25 +204,7 @@ nav {
     width: 65%;
     padding: 30px 0;
 }
-.bnner-btn-left{
-    color: #fff;
-    border: 1px solid #DB503A;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: 600;
-    background: #DB503A;
-    margin-right: 15px;
-}
-.bnner-btn-right{
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: 600;
-    background: #000;
-}
+
 
 /* banner right section */
 .banner-right{
@@ -357,7 +367,6 @@ position: relative;
   padding: 10px 0;
 }
 .habits-card p{
-  color: #fff;
   font-size: 16px;
   font-weight: 400;
   width: 70%;
@@ -390,3 +399,88 @@ position: relative;
     }
 }
 /* Habits section end */
+
+
+/* Run an Extra start  */
+
+.run-mein{
+    display: flex;
+    color: floralwhite;
+    width: 75%;
+    margin:90px auto;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 50px;
+    gap: 200px;
+}
+
+.run-left-site{
+    width: 60%;
+}
+.run-left-site h1{
+
+}
+.run-left-site p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.run-left-site button{
+    color: #fff;
+    border: 1px solid #DB503A;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #DB503A;
+    margin-right: 15px;
+}
+.run-right-site img{
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media screen  and (max-width: 576px){
+    .run-mein{
+        display: block;
+        color: floralwhite;
+        width: 70%;
+        margin:50px auto;
+        background-color: #222222;
+        border-radius: 10px;
+        padding: 40px;
+        gap: 0;
+    }
+    
+    .run-left-site{
+        width: 90%;
+        margin: auto;
+    }
+    .run-left-site p{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .run-left-site button{
+        color: #fff;
+        border: 1px solid #DB503A;
+        padding: 10px 110px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        background: #DB503A;
+        margin-right: 0;
+    }
+    .run-right-site img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+}
+/* Run an Extra end */
+
+
+
+/* Trainings and Exercises start */

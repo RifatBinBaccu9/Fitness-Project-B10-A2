@@ -9,6 +9,7 @@ body p{
     font-weight: 400;
 }
 body h1{
+    color: #fff;
     font-size: 40px;
     font-weight: 800;
 }
@@ -484,3 +485,168 @@ position: relative;
 
 
 /* Trainings and Exercises start */
+.trainings{
+width: 85%;
+margin: auto;
+}
+.trainings p{
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.imageTop{
+    display: flex;
+}
+.image1{
+    width: 25%;
+    background: url('./images/exercise1.jpg'), rgba(80, 210, 183);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image2{
+    width: 50%;
+    background: url('./images/exercise2.png'), rgba(161, 75, 66);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image3{
+    width: 25%;
+    background: url('./images/exercise3.png'), rgba(120, 120, 118);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+
+.image4{
+    width: 45%;
+     background: url('./images/exercise4.png'), rgba(75, 75, 77);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image5{
+    width: 25%;
+     background: url('./images/exercise5.jpg'), rgba(128, 183, 107);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image6{
+    width: 30%;
+     background: url('./images/exercise6.jpg'), rgb(178, 199, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+
+@media screen and (max-width: 576px) {
+    .trainings{
+        width: 85%;
+        margin: auto;
+        }
+        .trainings p{
+            width: 90%;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }  
+.image1{
+    width: 50%;
+    background: url('./images/exercise1.jpg'), rgba(80, 210, 183);
+
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image2{
+    width: 50%;
+    background: url('./images/exercise2.png'), rgba(161, 75, 66);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+    background-position: top right;
+}
+.image3{
+ display: none;
+}
+
+.image4{
+    width: 45%;
+     background: url('./images/exercise4.png'), rgba(75, 75, 77);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image5{
+    width: 55%;
+     background: url('./images/exercise5.jpg'), rgba(128, 183, 107);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image6{
+display: none;
+}
+}
+/* Trainings and Exercises end */
+
+.BMI-Calculator{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+    margin: auto;
+}
+
+.BMI{
+    background-color: rgba(34, 34, 34);
+   
+}
+.bmi{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+}
+
+.bmi-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bmi-table th, 
+.bmi-table td {
+    border: 1px solid #393939;
+    padding: 10px;
+    text-align: center;
+}
+
+.bmi-table th {
+    color: white;
+    font-weight: bold;
+}
+.bmi-table td{
+    color: #393939;
+}
+.bmi-left{
+width: 40%;
+}
+.bmi-right{
+width: 60%;
+}
+
+.inputText {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.inputText input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #393939;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #393939;
+}
+
+/* */
